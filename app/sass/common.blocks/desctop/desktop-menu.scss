@@ -1,0 +1,152 @@
+.desktop-menu {
+  max-width: 245px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 21px;
+  padding-left: 20px;
+  position: absolute;
+  top: 0;
+  background: #FFFFFF;
+  border-right: 1px solid #D8D8D8;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    position: relative;
+    padding-top: 19px;
+    
+    &:before {
+      content: '';
+      background: #D8D8D8;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    list-style-type: none;
+    margin-top: 20px;
+
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 20px;
+      color: #979797;
+    }
+  }
+
+  &__icon {
+    margin-right: 28px;
+    min-width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-squares {
+    background: url("../img/icon-squares.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 19px;
+    height: 20px;
+    display: block;
+  }
+
+  &__icon-arrows {
+    background: url("../img/icon-arrows.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 22px;
+    height: 17px;
+    display: block;
+  }
+
+  &__icon-purse {
+    background: url("../img/icon-purse.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 21px;
+    height: 18px;
+    display: block;
+  }
+
+  &__icon-clock {
+    background: url("../img/icon-clock.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 22px;
+    height: 20px;
+    display: block;
+  }
+
+  &__icon-bill {
+    background: url("../img/icon-bill.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 20px;
+    height: 18px;
+    display: block;
+  }
+
+  &__icon-message {
+    background: url("../img/icon-message.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 21px;
+    height: 16px;
+    display: block;
+  }
+
+  &__icon-profile {
+    background: url("../img/icon-profile.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 19px;
+    height: 19px;
+    display: block;
+  }
+
+  &__icon-headphones {
+    background: url("../img/icon-headphones.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 21px;
+    height: 22px;
+    display: block;
+  }
+
+  &__icon-exit {
+    background: url("../img/icon-exit.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 17px;
+    height: 17px;
+    display: block;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #A2A2A2;
+  }
+
+  &__header {
+    padding-bottom: 18px;
+  }
+
+  &__header-logo {
+    background: url("../img/header-logo.png") no-repeat center;
+    background-size: 100% auto;
+    width: 87px;
+    height: 19px;
+    display: block;
+  }
+}

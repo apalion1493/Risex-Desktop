@@ -1,0 +1,220 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.select-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+
+  &__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background: $bgSelector;
+    border-radius: 6px;
+
+    &:focus {
+      & + .select-box__list {
+        opacity: 1;
+        animation-name: none;
+
+        .select-box__option {
+          cursor: pointer;
+        }
+      }
+
+      .select-box__icon {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 9px;
+    transition: 0.2s ease;
+  }
+
+  &__value {
+    display: flex;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .select-box__input-text {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: $bgSelector;
+    border-radius: 6px;
+    height: 49px;
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0 5px 30px -10px transparentize(#000, 0.5);
+    background-color: #fff;
+    z-index: 1;
+    margin-top: 6px;
+    padding-bottom: 8px;
+    border-radius: 6px;
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 0;
+    padding-left: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 49px;
+
+    &:hover,
+    &:focus {
+      color: #000000;
+      background-color: $hoverMenu;
+    }
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+.form-group_test-height {
+  height: 1000px;
+}
+
+.block-select {
+  width: 100%;
+}
+
+.block-select__text {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: #7D7D7D;
+  margin-bottom: 8px;
+}
+
+.select-box__block-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.select-box__block-icon-bitok {
+  background: url("../img/flag__russia.png") no-repeat center;
+  background-size: 100% auto;
+  display: block;
+}
+
+.select-box_currency {
+  .select-box__block-icon {
+    margin-right: 12px;
+    margin-left: 20px;
+  }
+
+  .select-box__input-text {
+    padding-left: 0;
+  }
+
+  .select-box__option {
+    padding-left: 0;
+  }
+}
+
+.select-box_cryptocurrency {
+  .select-box__input-text {
+    padding-left: 0;
+  }
+
+  .select-box__option {
+    padding-left: 0;
+  }
+
+  .select-box__block-icon {
+    margin-left: 7px;
+  }
+}
+
+.select-box__text-first {
+  color: #808080;
+}
+
+
+
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.red {
+  background-color: red;
+}
+
+.block-select_font {
+  .select-box__input-text,
+  .select-box__option {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+.form-group.form-group_mb10 {
+  margin-bottom: 10px;
+}
+
+.block-select.block-select_half {
+  width: 100% !important;
+}
+
+//.block-select_half-right {
+//  margin-right: 10px;
+//}
+//
+//.block-select_half-left {
+//  margin-left: 10px;
+//}

@@ -1,0 +1,84 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.wallet-history {
+  margin-top: 9px;
+  padding: 21px 12px 15px 11px;
+  background: #fff;
+}
+
+.wallet-history__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  margin-bottom: 22px;
+}
+
+.wrap-collabsible-walletHistory {
+  margin-bottom: 0;
+  width: 100%;
+  padding: 6px 0 13px 8px;
+  background: $bgSelector;
+  border: none;
+  border-bottom: 1px solid #F2F6F3;
+
+  .lbl-toggle {
+    margin-bottom: 0;
+    background: $bgSelector;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 3px;
+    margin-right: 13px;
+  }
+
+  .wrap-collabsible-operation__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrap-collabsible-operation__text-title {
+    font-size: 16px;
+    color: #262628;
+    line-height: 16px;
+  }
+
+  .wrap-collabsible-operation__text-data {
+    font-size: 10px;
+    color: #A3A3A3;
+  }
+
+  .lbl-toggle:before {
+    background: url(../img/Shape.svg) no-repeat center;
+    background-size: 100% auto;
+    height: 8.5px;
+    width: 15px;
+  }
+
+  .wrap-collabsible-operation__list {
+    background: #E1EDE5;
+    margin-top: 12px;
+    padding-top: 15px;
+    padding-left: 22px;
+    padding-right: 21px;
+  }
+
+  .wrap-collabsible-operation__item:last-child p {
+    margin-bottom: 14px;
+  }
+}
+
+.collapsible-content .content-inner .wrap-collabsible-operation__blockchain-text {
+  padding-left: 22px;
+  padding-top: 7px;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 0;
+}
+
+.wrap-collabsible-container {
+  border-radius: 6px;
+  background: $bgSelector;
+}

@@ -1,0 +1,84 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+@import "../variable-color";
+
+.desktop-bg {
+  background: #F9FAFC !important;
+}
+
+.header-desktop {
+  background: $color-button;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title-section {
+    a {
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__notifications {
+    cursor: pointer;
+    background: url("../img/icon-bell.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    margin-left: 23px;
+
+    span {
+      position: absolute;
+      background: #ffffff;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+      color: #00CC4F;
+      min-width: 18px;
+      height: 18px;
+      right: -6px;
+      top: -5px;
+    }
+  }
+
+  &__profile {
+    background: url("../img/icon-white-profile.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    margin-left: 14px;
+  }
+}
+
+.header-btn {
+  border-radius: 21px;
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.170658);
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #474747;
+  outline: none;
+
+  &:active,  &:focus {
+    outline: none;
+  }
+}
+

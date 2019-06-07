@@ -1,0 +1,112 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.wrap-collabsible.wrap-collabsible-operation {
+  width: 100%;
+  padding: 6px 8px 6px 8px;
+  background: $bgSelector;
+  border: none;
+  margin-bottom: 5px;
+
+  .lbl-toggle {
+    margin-bottom: 0;
+    background: $bgSelector;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 3px;
+    margin-right: 5px;
+
+    &:before {
+      background: url("../img/Shape.svg") no-repeat center;
+      background-size: 100% auto;
+      height: 8.5px;
+      width: 15px;
+    }
+  }
+
+
+  .wrap-collabsible-operation__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrap-collabsible-operation__text-data {
+    font-size: 10px;
+    line-height: 14px;
+    color: #A3A3A3;
+  }
+
+  .wrap-collabsible-operation__arrow {
+    display: block;
+    width: 11.5px;
+    height: 6px;
+    margin-right: 18.5px;
+  }
+
+  .wrap-collabsible-operation__arrow-success {
+    background: url("../img/green-arrow.svg") no-repeat center;
+    background-size: 100% auto;
+  }
+
+  .wrap-collabsible-operation__arrow-error {
+    background: url("../img/arrow-red.svg") no-repeat center;
+    background-size: 100% auto;
+  }
+
+  .wrap-collabsible-operation__text-title {
+    font-size: 16px;
+    color: #262628;
+  }
+
+  .collapsible-content {
+
+    .content-inner {
+      padding-top: 30px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100%;
+  }
+}
+
+.sale-purchase_padding-operation {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  background: #ffffff;
+}
+
+.wrap-collabsible-operation__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collapsible-content .content-inner .wrap-collabsible-operation__item p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: 0.25px;
+  margin-bottom: 26px;
+}
+
+.wrap-collabsible-operation__list {
+  padding-left: 34px;
+  margin-bottom: 0;
+  padding-right: 3px;
+}
+
+.btn.wrap-collabsible-operation__button {
+  height: 42px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
+
+  &:active, &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+

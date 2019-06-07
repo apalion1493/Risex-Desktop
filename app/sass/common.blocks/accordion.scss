@@ -1,0 +1,47 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+a.accordion-toggle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: $bgSelector;
+  text-decoration: none;
+  color: #262628;
+  position: relative;
+  padding: 15px 12px 14px 16px;
+  border-radius: 6px;
+
+  &:hover {
+    text-decoration: none;
+    color: #262628;
+  }
+
+  &:before {
+    content: '';
+    background: url("../img/Shape-icon.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    right: 12px;
+    transition: 0.3s;
+  }
+}
+
+a.accordion-toggle.active {
+  color: #1BA450;
+  &:before {
+    background: url("../img/Shape-icon__green.svg") no-repeat center;
+    transform: rotate(180deg);
+    transition: 0.3s;
+  }
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}

@@ -1,0 +1,82 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.transaction-turnover__container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.transaction-turnover__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transaction-turnover__block-name {
+  font-size: 12px;
+  line-height: 14px;
+  color: #979797;
+  font-weight: 500;
+  position: relative;
+}
+
+.transaction-turnover__block-number {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #262628;
+  margin-top: 8px;
+}
+
+.transaction-turnover_indents {
+  padding-top: 16px;
+  padding-bottom: 14px;
+}
+
+.transaction-turnover h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #353535;
+  margin-bottom: 10px;
+}
+
+.transaction-turnover__block-name_btc:before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  background: #57CE85;
+  border-radius: 5.5px;
+  width: 8px;
+  height: 8px;
+  top: 3px;
+}
+
+.transaction-turnover__block-name_usd:before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  background: #37985D;
+  border-radius: 5.5px;
+  width: 8px;
+  height: 8px;
+  top: 3px;
+}
+
+.transaction-turnover {
+  .progress {
+    border-radius: 0;
+    height: 25px;
+
+    .transaction-turnover_color-first {
+      background-color: #57CE85;
+    }
+
+    .transaction-turnover_color-second {
+      background-color: #37985D;
+    }
+  }
+}
+

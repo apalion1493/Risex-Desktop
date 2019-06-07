@@ -1,0 +1,76 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.message-box {
+  background: #fff;
+  padding: 22px 20px 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.18416);
+}
+
+.message-box__container {
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  height: 55px;
+  display: flex;
+  align-items: flex-end;
+  overflow-y: scroll;
+}
+
+.message-box__textarea {
+  padding: 15px 12px 17px;
+  font-size: 14px;
+  width: 85%;
+  position: relative;
+  &:focus {
+    outline: none;
+  }
+
+  &:focus:before{
+    opacity: 0;
+  }
+}
+
+.message-box__textarea-long {
+  width: 100%;
+}
+
+.form-control.message-box__textarea::-webkit-input-placeholder {color:#919191;}
+.form-control.message-box__textarea::-moz-placeholder          {color:#919191;}/* Firefox 19+ */
+.form-control.message-box__textarea:-moz-placeholder           {color:#919191;}/* Firefox 18- */
+.form-control.message-box__textarea:-ms-input-placeholder      {color:#919191;}
+
+.message-box__textarea-download {
+  background: url("../img/clip-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  min-width: 19px;
+  height: 21px;
+  display: block;
+  margin-right: 21px;
+  margin-bottom: 16px;
+  margin-left: auto;
+}
+
+.message-box_conditions {
+  position: static;
+  box-shadow: none;
+
+  .message-box__container {
+    height: 102px;
+  }
+
+  .message-box__textarea {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &:focus {
+      border: 1px solid #13C64F;
+      border-radius: 6px;
+    }
+  }
+}

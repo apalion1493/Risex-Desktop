@@ -1,0 +1,23 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+@import "../variable-color";
+
+.select-box_w150 {
+  max-width: 150px;
+}
+
+.select-box_w200 {
+  max-width: 200px;
+}
+
+.select-box-desktop {
+
+  .select-box__current {
+    background: initial;
+    border: 1px solid #CAEDD9;
+    border-radius: 24.5px;
+  }
+
+  .select-box__input-text {
+    background: initial;
+  }
+}

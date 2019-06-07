@@ -1,0 +1,180 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.registration {
+  padding: 88px 30px 63px;
+  background: #ffffff;
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #353535;
+    font-weight: bold;
+  }
+}
+
+.registration-box {
+  input {
+    height: 42px;
+    background: #F5F5F5;
+    border: none;
+    font-size: 16px;
+
+    &::-webkit-input-placeholder {color:#7C827B; font-size: 16px;}
+    &::-moz-placeholder          {color:#7C827B; font-size: 16px;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#7C827B; font-size: 16px;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#7C827B; font-size: 16px;}
+
+
+    &:hover, &:active, &:focus {
+      background: #F5F5F5;
+      box-shadow: none;
+    }
+  }
+
+  label {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.38);
+    line-height: 28px;
+    letter-spacing: 0.375px;
+    margin-bottom: 3px;
+  }
+
+  .form-group {
+    margin-bottom: 7px;
+    position: relative;
+  }
+}
+
+.registration-container {
+  margin-top: 28px;
+}
+
+.registration-container .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  content: '';
+  background: $hoverMenu;
+  border-radius: 50%;
+  text-align: center;
+  opacity: 1;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+
+.registration-container .slick-dots .slick-active button:before {
+  width: 9px;
+  height: 9px;
+  background: $color-button;
+  top: -2px;
+}
+
+.registration-blockWarning {
+  background: #F9F0EE;
+  border: 1px solid #F8C1C1;
+  border-radius: 4px;
+  padding: 11px 10px;
+}
+
+.registration-blockWarning__text {
+  font-size: 11px;
+  color: #353535;
+  margin-bottom: 0;
+}
+
+.registration-errorText {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #FC1010;
+  font-size: 12px;
+  line-height: 28px;
+  display: none;
+}
+
+.error-form .registration-errorText {
+  display: block;
+}
+
+.registration-container__checkbox {
+
+  label:before {
+    border: 1px solid rgba(0, 0, 0, 0.38) !important;
+  }
+
+  input[type=checkbox]:checked + .btn-bottomSection__label:after {
+    background: rgba(0, 0, 0, 0.38);
+    left: 3px;
+    bottom: 10px;
+  }
+
+  a {
+    color: #000000;
+    margin-left: 4px;
+  }
+}
+
+.btn-risex_registration {
+  margin-top: 30px;
+}
+
+.registration-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.registration-account__text {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.4375px;
+  color: rgba(0, 0, 0, 0.38);
+  margin-bottom: 0;
+}
+
+.registration-account__link {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.4375px;
+  color: #19A44F;
+  margin-bottom: 0;
+  margin-left: 13px;
+  display: block;
+}
+
+.registration-box__points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-box__points-block {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 20px;
+
+  label {
+    position: relative;
+    width: 5px;
+    height: 5px;
+  }
+
+  input[type=radio] {display: none;}
+
+  input[type=radio] + label:before {
+    content: "";
+    background: $hoverMenu;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    transition:  ease .3s;
+    position: absolute;
+  }
+  input[type=radio]:checked + label:before {
+    background: $color-button;
+    transform: scale(1.9,1.9);
+  }
+}

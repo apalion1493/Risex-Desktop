@@ -1,0 +1,24 @@
+@import "../../library.blocks/bootstrap/bootstrap-reboot";
+@import "../variable-color";
+
+
+.desktop-extra-options {
+  max-width: 260px;
+  width: 100%;
+  a.accordion-toggle {
+    background: initial;
+    font-size: 14px;
+    color: #1BA450;
+
+    &:before {
+      content: '';
+      background: url(../img/bold-green-arrow.svg) no-repeat center;
+      background-size: 100% auto;
+      width: 15px;
+      height: 9px;
+      position: absolute;
+      right: 12px;
+      transition: 0.3s;
+    }
+  }
+}
