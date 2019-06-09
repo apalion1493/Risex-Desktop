@@ -1,2 +1,1 @@
-
-https://apalion1493.github.io/Risex-UI/app/desktop-purse.html
+https://apalion1493.github.io/Risex-Desktop/desktop-purse.html
