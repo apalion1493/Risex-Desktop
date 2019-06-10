@@ -3,14 +3,22 @@
 
 .transaction-turnover__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 16px;
 }
 
 .transaction-turnover__block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+
+  &:last-child {
+    margin-right: 25px;
+  }
+
+  &:nth-child(2) .transaction-turnover__block-name {
+    margin-left: 16px;
+  }
 }
 
 .transaction-turnover__block-name {
@@ -19,6 +27,11 @@
   color: #979797;
   font-weight: 500;
   position: relative;
+  margin-left: 23px;
+
+  &:last-child {
+    margin-left: 0;
+  }
 }
 
 .transaction-turnover__block-number {
@@ -30,15 +43,14 @@
 }
 
 .transaction-turnover_indents {
-  padding-top: 16px;
+  padding-top: 9px;
   padding-bottom: 14px;
 }
 
 .transaction-turnover h3 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
-  text-align: center;
+  text-align: left;
   color: #353535;
   margin-bottom: 10px;
 }
@@ -46,7 +58,7 @@
 .transaction-turnover__block-name_btc:before {
   content: '';
   position: absolute;
-  left: -14px;
+  left: -22px;
   background: #57CE85;
   border-radius: 5.5px;
   width: 8px;
@@ -57,7 +69,7 @@
 .transaction-turnover__block-name_usd:before {
   content: '';
   position: absolute;
-  left: -14px;
+  left: -22px;
   background: #37985D;
   border-radius: 5.5px;
   width: 8px;

@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en" class="desktop-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Обмен-покупка</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="desktop-bg position-relative">
+
+<header class="header-desktop">
+    <div class="header-desktop__inner desktop-inner w-100">
+        <div class="header-desktop__title-section">
+            <a href="#">Личный профиль</a>
+        </div>
+
+        <div class="header-desktop__row">
+            <p class="switch-text-header">Режим профи</p>
+            <label class="switch switch-btn">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <div class="header-desktop__btn">
+                <button class="header-btn">Новое объявление</button>
+            </div>
+            <div class="header-desktop__notifications">
+                <span>3</span>
+            </div>
+            <div class="header-desktop__profile"></div>
+        </div>
+    </div>
+</header>
+
+<main class="main-page pb-5">
+    <div class="desktop-inner">
+        <div class="profile-container wrapper_green-border">
+            <div class="profile-container__general-info">
+                <div class="d-flex">
+                    <div class="profile-container__block-img">
+                        <img src="img/cat-avatar.png" alt="">
+                    </div>
+
+                    <div class="profile-container__block-info">
+                        <span>ChangeMeNow</span>
+                        <p class="profile-container__review">отзывы (<span class="profile-container__review-green">2</span>/<span class="profile-container__review-red">0</span>)</p>
+                    </div>
+                </div>
+                <div class="profile-container__aboutMe">
+                    <span class="profile-container__aboutMe-title">о себе</span>
+                    <form class="w-100">
+                        <div class="form-group mb-0">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Напишите о себе несколько слов">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="profile-container__transaction-turnover">
+                <div class="transaction-turnover transaction-turnover_indents">
+                    <h3>Оборот транзакций</h3>
+                    <div class="profile-container_transaction-turnover-pr">
+                        <div class="transaction-turnover__container">
+                            <div class="transaction-turnover__block">
+                                <div class="transaction-turnover__block-name transaction-turnover__block-name_btc">BTC</div>
+                                <div class="transaction-turnover__block-number">0.27050742</div>
+                            </div>
+
+                            <div class="transaction-turnover__block">
+                                <div class="transaction-turnover__block-name transaction-turnover__block-name_usd">USD</div>
+                                <div class="transaction-turnover__block-number">$1000</div>
+                            </div>
+
+                            <div class="transaction-turnover__block">
+                                <div class="transaction-turnover__block-name transaction-turnover__block-name_total ml-0">Итого</div>
+                                <div class="transaction-turnover__block-number">$ 1429</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="progress">
+                                <div class="progress-bar transaction-turnover_color-first" role="progressbar" style="width: 89%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar transaction-turnover_color-second" role="progressbar" style="width: 11%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-container profile-container_settings wrapper_green-border">
+            <div class="w-100 mr-4">
+                <div class="profile-container__wrapper">
+                    <div class="profile-container__block profile-container__blockLeft">
+                        <h3>E-mail</h3>
+                        <p class="profile-container__block-text">Email: aleksey.stepikin@gmail.com</p>
+                    </div>
+                    <div class="profile-container__block profile-container__blockRight">
+                        <a href="#">Изменить</a>
+                    </div>
+                </div>
+
+                <div class="profile-container__wrapper mt-4">
+                    <div class="profile-container__block profile-container__blockLeft">
+                        <h3>Пароль</h3>
+                        <p class="profile-container__block-text">***************</p>
+                    </div>
+                    <div class="profile-container__block profile-container__blockRight">
+                        <a href="#">Изменить</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100">
+                <div class="profile-container__wrap">
+                    <div class="profile-container__wrap-firstRow">
+                        <h3>Двухфакторная аунтефикация</h3>
+                        <label class="switch switch-btn mr-0">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="profile-container__wrap-secondRow">
+                        <p>Уровень защиты: слабый.<br>
+                            Для усиленя защиты рекоммендуем включить двухфакторную аунтефикацию</p>
+                    </div>
+                </div>
+
+                <div class="profile-container__wrap">
+                    <div class="profile-container__wrap-firstRow">
+                        <h3>Email уведомления</h3>
+                        <label class="switch switch-btn mr-0">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="profile-container__wrap-secondRow">
+                        <p>Уведомления приходят при создании чата, новой сделки и изменении почты.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabs-content wrapper_green-border">
+            <div class="tabs">
+                <input id="tab1" class="tab1" type="radio" name="tabs" checked>
+                <label for="tab1" title="Вкладка 1">История авторизаций <span>18</span></label>
+
+                <input id="tab2" class="tab2" type="radio" name="tabs">
+                <label for="tab2" title="Вкладка 2">Логи безопасности <span>18</span></label>
+
+                <section class="content-tab1">
+                    <section class="page-info">
+                        <div class="page-info__container">
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="content-tab2">
+                    <section class="page-info">
+                        <div class="page-info__container">
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconSuccess"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusSuccess">
+                                    <span>good</span>
+                                </div>
+                            </div>
+                            <div class="page-info__container-block">
+                                <div class="page-info__container-block-icon">
+                                    <div class="page-info__container-block-iconError"></div>
+                                </div>
+                                <div class="page-info__container-block-info">
+                                    <span>sign-in</span>
+                                    <time>13.04.2019 16:49</time>
+                                </div>
+                                <div class="page-info__container-block-status page-info__container-block-statusError">
+                                    <span>problem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="desktop-menu">
+    <header class="desktop-menu__header">
+        <a href="#" class="desktop-menu__header-logo"></a>
+    </header>
+    <section class="desktop-menu__section">
+        <span class="desktop-menu__title">финансы</span>
+        <ul class="desktop-menu__list">
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                        <span class="desktop-menu__icon-squares"></span>
+                    </span>
+                    <p>Объявления</p>
+                </a>
+            </li>
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class="desktop-menu__icon-arrows"></span>
+                    </span>
+                    <p>Обмен</p>
+                </a>
+            </li>
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                          <span class=" desktop-menu__icon-purse"></span>
+                    </span>
+                    <p>Кошелек</p>
+                </a>
+            </li>
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class=" desktop-menu__icon-clock"></span>
+                    </span>
+                    <p>Мои операции</p>
+                </a>
+            </li>
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class=" desktop-menu__icon-bill"></span>
+                    </span>
+                    <p>Экстренный вывод</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="desktop-menu__section">
+        <span class="desktop-menu__title">аккаунт</span>
+        <ul class="desktop-menu__list">
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                        <span class="desktop-menu__icon-message"></span>
+                    </span>
+                    <p>Сообщения</p>
+                </a>
+            </li>
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class="desktop-menu__icon-profile"></span>
+                    </span>
+                    <p>Личный профиль</p>
+                </a>
+            </li>
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                          <span class=" desktop-menu__icon-headphones"></span>
+                    </span>
+                    <p>Поддержка</p>
+                </a>
+            </li>
+            <li class="desktop-menu__item">
+                <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class=" desktop-menu__icon-exit"></span>
+                    </span>
+                    <p>Выйти</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
-@import "../../library.blocks/bootstrap/bootstrap-reboot";
-@import "../variable-color";
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
 
 .desktop-bg {
   background: #F9FAFC !important;
@@ -11,6 +11,7 @@
   padding-bottom: 12px;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 
   &__row {
     display: flex;

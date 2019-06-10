@@ -11,12 +11,17 @@
 <body class="desktop-bg position-relative">
 
 <header class="header-desktop">
-    <div class="header-desktop__inner desktop-inner">
+    <div class="header-desktop__inner desktop-inner w-100">
         <div class="header-desktop__title-section">
-            <a href="#">Объявления</a>
+            <a href="#">Личный профиль</a>
         </div>
 
         <div class="header-desktop__row">
+            <p class="switch-text-header">Режим профи</p>
+            <label class="switch switch-btn">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
             <div class="header-desktop__btn">
                 <button class="header-btn">Новое объявление</button>
             </div>
@@ -28,253 +33,470 @@
     </div>
 </header>
 
-<main>
+<main class="main-page pb-5">
     <div class="desktop-inner">
-        <span>Продажа BTC</span>
-        <div class="d-flex">
-            <div class="select-box select-box-desktop select-box_w150">
-                <div class="select-box__current" tabindex="1">
-                    <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked">
-                        <p class="select-box__input-text select-box__input-text_"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC</p>
+        <div class="profile-container profile-container_short wrapper_green-border">
+            <div class="profile-container__general-info">
+                <div class="d-flex">
+                    <div class="profile-container__block-img">
+                        <img src="img/cat-avatar.png" alt="">
+                        <div class="profile-container__block-img-icon">
+                            <span>Новичок</span>
+                        </div>
                     </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC2</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC3</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC4</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC5</p>
-                    </div>
-                    <img class="select-box__icon" src="img/arrow-op-green.svg" alt="Arrow Icon" aria-hidden="true">
-                </div>
-                <ul class="select-box__list">
-                    <li><label class="select-box__option" for="0"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC</label></li>
-                    <li><label class="select-box__option" for="1"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC2</label></li>
-                    <li><label class="select-box__option" for="2"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC3</label></li>
-                    <li><label class="select-box__option" for="3"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC4</label></li>
-                    <li><label class="select-box__option" for="4"><span class="select-box__block-icon select-box__block-icon-bitok"></span>BTC5</label></li>
-                </ul>
-            </div>
-            <div class="select-box select-box-desktop select-box_w150">
-                <div class="select-box__current" tabindex="2">
-                    <div class="select-box__value"><input class="select-box__input" type="radio" id="5" value="6" name="Ben1" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB1</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="6" value="7" name="Ben1" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB2</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="7" value="8" name="Ben1" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB3</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="8" value="9" name="Ben1" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB4</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="9" value="10" name="Ben1" checked="checked">
-                        <p class="select-box__input-text"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB5</p>
-                    </div>
-                    <img class="select-box__icon" src="img/arrow-op-green.svg" alt="Arrow Icon" aria-hidden="true">
-                </div>
-                <ul class="select-box__list">
-                    <li><label class="select-box__option" for="5"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB1</label></li>
-                    <li><label class="select-box__option" for="6" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB2</label></li>
-                    <li><label class="select-box__option" for="7" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB3</label></li>
-                    <li><label class="select-box__option" for="8" ><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB4</label></li>
-                    <li><label class="select-box__option" for="9"><span class="select-box__block-icon select-box__block-icon-bitok"></span>RUB5</label></li>
-                </ul>
-            </div>
-            <div class="select-box select-box-desktop select-box_w200">
-                <div class="select-box__current" tabindex="2">
-                    <div class="select-box__value"><input class="select-box__input" type="radio" id="55" value="56" name="Ben4" checked="checked">
-                        <p class="select-box__input-text">Способ оплаты</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="56" value="57" name="Ben4" checked="checked">
-                        <p class="select-box__input-text">Способ оплаты2</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="57" value="58" name="Ben4" checked="checked">
-                        <p class="select-box__input-text">Способ оплаты3</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="58" value="59" name="Ben4" checked="checked">
-                        <p class="select-box__input-text">Способ оплаты4</p>
-                    </div>
-                    <div class="select-box__value">
-                        <input class="select-box__input" type="radio" id="59" value="60" name="Ben4" checked="checked">
-                        <p class="select-box__input-text">Способ оплаты5</p>
-                    </div>
-                    <img class="select-box__icon" src="img/arrow-op-green.svg" alt="Arrow Icon" aria-hidden="true">
-                </div>
-                <ul class="select-box__list">
-                    <li><label class="select-box__option" for="55">Способ оплаты</label></li>
-                    <li><label class="select-box__option" for="56" >Способ оплаты2</label></li>
-                    <li><label class="select-box__option" for="57" >Способ оплаты3</label></li>
-                    <li><label class="select-box__option" for="58" >Способ оплаты4</label></li>
-                    <li><label class="select-box__option" for="59">Способ оплаты5</label></li>
-                </ul>
-            </div>
-            <div class="desktop-extra-options ml-auto">
-                <a href="#content-1" class="accordion-toggle">Дополнительные параметры</a>
-                <div class="accordion-content" id="content-1">
-                    <div class="setting-content">
-                        <div class="d-flex">
-                            <div class="block-form block-form_column block-form_left">
-                                <p class="caption-text text-center">Мин цена</p>
-                                <form action="" class="form-button">
-                                    <div class="form-group form-group_mb10">
-                                        <input type="text" class="form-control" value="0,00" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                                        <a class="button-bank" href="#">RUB</a>
-                                    </div>
-                                </form>
-                            </div>
 
-                            <div class="block-form block-form_column block-form_right">
-                                <p class="caption-text text-center">Макс цена</p>
-                                <form action="" class="form-button">
-                                    <div class="form-group form-group_mb10">
-                                        <input type="text" class="form-control" value="0,00" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                                        <a class="button-bank" href="#">RUB</a>
-                                    </div>
-                                </form>
-                            </div>
+                    <div class="profile-container__block-info">
+                        <span>ChangeMeNow</span>
+                        <div class="star-rating">
+                            <span class="star-rating__star active"></span>
+                            <span class="star-rating__star active"></span>
+                            <span class="star-rating__star active"></span>
+                            <span class="star-rating__star"></span>
+                            <span class="star-rating__star"></span>
                         </div>
-                        <div class="d-flex">
-                            <div class="block-form block-form_column block-form_left">
-                                <p class="caption-text text-center">Лимит от</p>
-                                <form action="" class="form-button">
-                                    <div class="form-group form-group_mb10">
-                                        <input type="text" class="form-control" value="0,00" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                                        <a class="button-bank" href="#">RUB</a>
-                                    </div>
-                                </form>
-                            </div>
+                        <p class="profile-container__review">отзывы (<span class="profile-container__review-green">2</span>/<span class="profile-container__review-red">0</span>)</p>
+                    </div>
 
-                            <div class="block-form block-form_column block-form_right">
-                                <p class="caption-text text-center">Лимит до</p>
-                                <form action="" class="form-button">
-                                    <div class="form-group form-group_mb10">
-                                        <input type="text" class="form-control" value="0,00" onfocus="myFunction1(this)" onblur="myFunction2(this)">
-                                        <a class="button-bank" href="#">RUB</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="desktop-inner ">
-        <div class="row">
-            <div class="col-4">
-                <div class="card-product">
-                    <div class="card-product__first-row">
-                        <div class="card-product__title">
-                            <img src="img/Avatar-2.png" alt="">
-                            <div class="card-product__title-text">
-                                <span>PoolClient </span>
-                                <div>звёздочки</div>
-                            </div>
-                            <div class="ml-auto card-product__reviews">
-                                <span>78%</span>
-                                <p>отзывы </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-product__second-row">
-                        <span class="card-product__price">393 833 RUB</span>
-                        <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
-                        <a class="card-product__link-buy" href="#">Купить</a>
-                    </div>
-                    <div class="card-product__three-row">
-                        <a class="card-product__icon-bank card-product__icon-yandex" href="#"></a>
-                        <a class="card-product__icon-bank card-product__icon-alfaBank" href="#"></a>
+                    <div class="profile-container__block-rightInfo">
+                        <span class="profile-container__block-rightInfo-status">Новичок</span>
                         <div class="card-product__time">
                             <span class="card-product__time-icon"></span>
                             <p class="card-product__time-text">5 мин</p>
                         </div>
                     </div>
                 </div>
+                <div class="profile-container__bottom-block">
+                    <span>Общая информация:</span>
+                    <div class="profile-container__commonInfo">
+                        <ul class="profile-container__commonInfo-list">
+                            <li class="profile-container__commonInfo-item">
+                                <p>Суммарный рейтинг:</p><span>100%</span>
+                            </li>
+                            <li class="profile-container__commonInfo-item">
+                                <p>На сайте с:</p><span>18.02.19</span>
+                            </li>
+                            <li class="profile-container__commonInfo-item">
+                                <p>Количество сделок:</p><span>19</span>
+                            </li>
+                            <li class="profile-container__commonInfo-item">
+                                <p>E-mail:</p><span class="d-flex align-items-center"><span class="profile-container__commonInfo-confirmation"></span>Подтвержден</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-4">
-                <div class="card-product">
-                    <div class="card-product__first-row">
-                        <div class="card-product__title">
-                            <img src="img/Avatar-2.png" alt="">
-                            <div>
-                                <span>PoolClient </span>
-                                <div>звёздочки</div>
-                                <!--<div id="reviewStars-input">-->
-                                <!--<input id="star-4" type="radio" name="reviewStars"/>-->
-                                <!--<label title="gorgeous" for="star-4"></label>-->
-
-                                <!--<input id="star-3" type="radio" name="reviewStars"/>-->
-                                <!--<label title="good" for="star-3"></label>-->
-
-                                <!--<input id="star-2" type="radio" name="reviewStars"/>-->
-                                <!--<label title="regular" for="star-2"></label>-->
-
-                                <!--<input id="star-1" type="radio" name="reviewStars"/>-->
-                                <!--<label title="poor" for="star-1"></label>-->
-
-                                <!--<input id="star-0" type="radio" name="reviewStars"/>-->
-                                <!--<label title="bad" for="star-0"></label>-->
-                                <!--</div>-->
+            <div class="profile-container__transaction-turnover">
+                <div class="transaction-turnover transaction-turnover_indents">
+                    <h3>Оборот транзакций</h3>
+                    <div class="profile-container_transaction-turnover-pr">
+                        <div class="transaction-turnover__container">
+                            <div class="transaction-turnover__block">
+                                <div class="transaction-turnover__block-name transaction-turnover__block-name_btc">BTC</div>
+                                <div class="transaction-turnover__block-number">0.27050742</div>
                             </div>
-                            <div class="ml-auto">
-                                <span>78%</span>
-                                <p>отзывы </p>
+
+                            <div class="transaction-turnover__block">
+                                <div class="transaction-turnover__block-name transaction-turnover__block-name_usd">USD</div>
+                                <div class="transaction-turnover__block-number">$1000</div>
+                            </div>
+
+                            <div class="transaction-turnover__block">
+                                <div class="transaction-turnover__block-name transaction-turnover__block-name_total ml-0">Итого</div>
+                                <div class="transaction-turnover__block-number">$ 1429</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="progress">
+                                <div class="progress-bar transaction-turnover_color-first" role="progressbar" style="width: 89%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar transaction-turnover_color-second" role="progressbar" style="width: 11%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="card-product">
-                    <div class="card-product__first-row">
-                        <div class="card-product__title">
-                            <img src="img/Avatar-2.png" alt="">
-                            <div>
-                                <span>PoolClient </span>
-                                <div>звёздочки</div>
-                                <!--<div id="reviewStars-input">-->
-                                <!--<input id="star-4" type="radio" name="reviewStars"/>-->
-                                <!--<label title="gorgeous" for="star-4"></label>-->
-
-                                <!--<input id="star-3" type="radio" name="reviewStars"/>-->
-                                <!--<label title="good" for="star-3"></label>-->
-
-                                <!--<input id="star-2" type="radio" name="reviewStars"/>-->
-                                <!--<label title="regular" for="star-2"></label>-->
-
-                                <!--<input id="star-1" type="radio" name="reviewStars"/>-->
-                                <!--<label title="poor" for="star-1"></label>-->
-
-                                <!--<input id="star-0" type="radio" name="reviewStars"/>-->
-                                <!--<label title="bad" for="star-0"></label>-->
-                                <!--</div>-->
+                <div class="profile-container__transaction-note profile-container__transaction-note-mr">
+                    <div class="d-flex">
+                        <form class="w-100">
+                            <div class="form-group mb-0">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Оставить заметку">
                             </div>
-                            <div class="ml-auto">
-                                <span>78%</span>
-                                <p>отзывы </p>
+                        </form>
+                        <div class="profile-container__transaction-note-btn">
+                            <button>Сохранить <span></span></button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="desktop-inner">
+        <div class="profile-block-advert_inner">
+            <span class="profile-block-advert__title">Объявления на продажу</span>
+            <div class="profile-block-advert">
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="card-product">
+                        <div class="card-product__first-row">
+                            <div class="card-product__title">
+                                <img src="img/Avatar-2.png" alt="">
+                                <div class="card-product__title-text">
+                                    <span>PoolClient </span>
+                                    <div class="star-rating">
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star active"></span>
+                                        <span class="star-rating__star"></span>
+                                        <span class="star-rating__star"></span>
+                                    </div>
+                                </div>
+                                <div class="ml-auto card-product__reviews">
+                                    <span>78%</span>
+                                    <a href="#">отзывы </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product__second-row">
+                            <span class="card-product__price">393 833 RUB</span>
+                            <span class="card-product__priceSub">от 5 000 до 12 045 RUB</span>
+                            <a class="card-product__link-buy" href="#">Купить</a>
+                        </div>
+                        <div class="card-product__three-row">
+                            <a class="card-product__icon-bank mr-1" href="#">
+                                <span class="card-product__icon-yandex"></span>
+                            </a>
+                            <a class="card-product__icon-bank" href="#">
+                                <span class="card-product__icon-alfaBank"></span>
+                            </a>
+                            <div class="card-product__time">
+                                <span class="card-product__time-icon"></span>
+                                <p class="card-product__time-text">5 мин</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </main>
 

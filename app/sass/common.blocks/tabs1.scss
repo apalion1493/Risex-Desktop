@@ -1,0 +1,99 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.tabs-content {
+  position: relative;
+
+  .tabs {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .tabs>section {
+    display: none;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fff;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.0745301);
+  }
+
+  .tabs>section>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .tabs>input {
+    display: none;
+    position: absolute;
+  }
+
+  .tabs>label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    text-align: center;
+    color: #aaa;
+    border: none;
+    background: rgba(229, 229, 229, 0.25);;
+    border-radius: 3px 3px 0 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.87);
+
+    span {
+      margin-left: 25px;
+      font-size: 15px;
+      text-align: right;
+      color: #B8BBC6;
+    }
+  }
+
+  .tabs>label:before {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+
+  .tabs>label:hover {
+    cursor: pointer;
+  }
+
+  .tabs>input:checked+label {
+    font-weight: 500;
+    font-size: 20px;
+    color: #009A3C;
+    background: #fff;
+    border: none;
+
+    span {
+      color: #505050;
+    }
+  }
+
+  .tab1:checked~.content-tab1, .tab2:checked~.content-tab2, .tab3:checked~.content-tab3, .tab4:checked~.content-tab4 {
+    display: block;
+  }
+
+}
+

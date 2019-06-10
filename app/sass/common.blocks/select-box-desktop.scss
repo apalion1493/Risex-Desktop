@@ -1,5 +1,5 @@
-@import "../../library.blocks/bootstrap/bootstrap-reboot";
-@import "../variable-color";
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
 
 .select-box_w150 {
   max-width: 150px;
@@ -11,6 +11,14 @@
 
 .select-box-desktop {
 
+  &:first-child {
+    margin-right: 20px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 23px;
+  }
+
   .select-box__current {
     background: initial;
     border: 1px solid #CAEDD9;
@@ -21,3 +29,4 @@
     background: initial;
   }
 }
+

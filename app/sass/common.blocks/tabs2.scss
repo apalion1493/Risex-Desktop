@@ -1,0 +1,95 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.tab-wrap {
+  padding: 30px 12px 10px 12px;
+  background: #ffffff;
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  .nav-item.nav-link {
+    border: none;
+    border-bottom: 2px solid #D5D5D5;
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #353535;
+  }
+
+  .nav-item.nav-link.active {
+    border-bottom: 2px solid #1BA450;
+    color: #1BA450;
+  }
+}
+
+.tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.tabs:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 100%;
+}
+.tabs .tabs-li {
+  float: right;
+  width: 130px;
+}
+
+.triple-tabs .tabs-li {
+  width: 33%;
+}
+
+.tabs .tabs-li > input {
+  display: none;
+}
+.tabs .tabs-li > label {
+  display: flex;
+  justify-content: center;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  line-height: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+  user-select: none;
+  padding-top: 25px;
+  margin-bottom: 10px;
+
+  span {
+    font-size: 13px;
+    line-height: 28px;
+  }
+}
+.tabs .tabs-li:last-child > label {
+  border-right-width: 1px;
+}
+.tabs .tab-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  overflow-y: auto;
+  transition: opacity .5s ease-in-out;
+  width: 100%;
+  top: 62px;
+}
+
+.tabs .tabs-li > input + label {
+  border-bottom: 2px solid #D5D5D5;
+  position: relative;
+  z-index: 10;
+}
+
+.tabs .tabs-li > input:checked + label {
+  color: #089D42;
+  font-weight: 500;
+  border-bottom: 2px solid #1BA450;
+
+}
+.tabs .tabs-li > input:checked ~ .tab-content {
+  display: block;
+}

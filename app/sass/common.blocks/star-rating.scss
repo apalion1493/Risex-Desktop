@@ -1,0 +1,21 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating__star {
+  background: url("../img/star-grey.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.star-rating__star.active {
+  background: url("../img/star-gold.svg") no-repeat center;
+  background-size: 100% auto;
+}
