@@ -27,7 +27,7 @@
   }
 
   .card-product__time-icon {
-    background: url("../../img/lightning-white.svg") no-repeat center;
+    background: url("../img/lightning-white.svg") no-repeat center;
     background-size: 100% auto;
   }
 
@@ -36,12 +36,12 @@
   }
 
   .star-rating__star {
-    background: url("../../img/star-green.svg") no-repeat center;
+    background: url("../img/star-green.svg") no-repeat center;
     background-size: 100% auto;
   }
 
   .star-rating__star.active {
-    background: url("../../img/star-white.svg") no-repeat center;
+    background: url("../img/star-white.svg") no-repeat center;
     background-size: 100% auto;
   }
 }
@@ -218,10 +218,6 @@
   }
 }
 
-//.card-product-new__row-first {
-//
-//}
-
 .card-product-new__title {
   font-size: 10px;
   line-height: 20px;
@@ -290,7 +286,7 @@
   }
 
   .star-rating__star {
-    background: url("../../img/star-white.svg") no-repeat center;
+    background: url("../img/star-white.svg") no-repeat center;
   }
 
   .star-rating__star.active {
