@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Обмен (Новичек)</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="layout-main">
+    <div class="layout-main__menu">
+        <div class="desktop-menu">
+            <header class="desktop-menu__header">
+                <a href="#" class="desktop-menu__header-logo"></a>
+                <div class="header-desktop__close"></div>
+            </header>
+            <section class="desktop-menu__section">
+                <span class="desktop-menu__title">финансы</span>
+                <ul class="desktop-menu__list">
+                    <li class="desktop-menu__item">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                        <span class="desktop-menu__icon-squares"></span>
+                    </span>
+                            <p>Объявления</p>
+                        </a>
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class="desktop-menu__icon-arrows"></span>
+                    </span>
+                            <p>Обмен</p>
+                        </a>
+                    </li>
+                    <li class="desktop-menu__item active">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                          <span class=" desktop-menu__icon-purse"></span>
+                    </span>
+                            <p>Кошелек</p>
+                        </a>
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class=" desktop-menu__icon-clock"></span>
+                    </span>
+                            <p>Мои операции</p>
+                        </a>
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class=" desktop-menu__icon-bill"></span>
+                    </span>
+                            <p>Экстренный вывод</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="desktop-menu__section">
+                <span class="desktop-menu__title">аккаунт</span>
+                <ul class="desktop-menu__list">
+                    <li class="desktop-menu__item">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                        <span class="desktop-menu__icon-message"></span>
+                    </span>
+                            <p>Сообщения</p>
+                        </a>
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class="desktop-menu__icon-profile"></span>
+                    </span>
+                            <p>Личный профиль</p>
+                        </a>
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                          <span class=" desktop-menu__icon-headphones"></span>
+                    </span>
+                            <p>Поддержка</p>
+                        </a>
+                    </li>
+                    <li class="desktop-menu__item">
+                        <a href="#">
+                    <span class="desktop-menu__icon">
+                         <span class=" desktop-menu__icon-exit"></span>
+                    </span>
+                            <p>Выйти</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="layout-main__content">
+        <header class="header-desktop ">
+            <div class="header-desktop__inner layout-main__centering container">
+                <div class="header-desktop__burger">
+                    <div class="header-desktop__burger-icon"></div>
+                </div>
+                <div class="header-desktop__title-section">
+                    <a href="#">Обмен</a>
+                </div>
+                <div class="header-desktop__row">
+
+                    <div class="header-desktop__btn">
+                        <button class="header-btn">Новое объявление</button>
+                    </div>
+                    <div class="header-desktop__notifications">
+                        <span>3</span>
+                    </div>
+                    <div class="header-desktop__profile"></div>
+                </div>
+            </div>
+        </header>
+        <div class="main-content layout-main__centering container pb-5">
+
+            <div class="tab change-tabs">
+                <span class="tablinks active" onclick="openCity(event, 'tab1')">Купить</span>
+                <span class="tablinks" onclick="openCity(event, 'tab2')">Продать</span>
+            </div>
+
+            <div class=" change-main-block">
+                <div class="tabbedblocks-content  container">
+                    <div class="row market-header">
+                        <div class="col-12">
+                            <span class="title-page">Покупка</span>
+                        </div>
+                        <div class="col-12 pr-0">
+                            <p class="second-title pt-4">Выберите способ оплаты</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row tabcontent" id="tab1">
+                        <div class="col-12">
+                            <div class="scroll-bar">
+                                <div class="s-b-sections">
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row tabcontent" id="tab2" style="display: none;">
+                        <div class="col-12">
+                            <div class="scroll-bar">
+                                <div class="s-b-sections">
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                2<img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="s-b-section">
+                                        <figure>
+                                            <i>
+                                                <img src="img/icon-tinkoff.svg" alt="">
+                                            </i>
+                                            <figcaption>
+                                                Тинькофф
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="data-entry">
+                    <div class="d-e-blocks take-set-input">
+                        <span>Получаете</span>
+                        <div class="block-wrap">
+                            <input type="text">
+                            <div class="currency-name">
+                                BTC
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-e-blocks rotate-currency">
+                        <i>
+
+                        </i>
+                    </div>
+                    <div class="d-e-blocks take-set-input">
+                        <span>Оплачиваете</span>
+                        <div class="block-wrap">
+                            <input type="text">
+                            <div class="currency-name">
+                                BTC
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-e-blocks rate-currency">
+                        <span>Курс</span>
+                        <div class="block-wrap">
+                            <div class="currency-price">
+                                502334,243
+                            </div>
+                            <div class="currency-name">
+                                BTC
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-e-blocks select-country">
+                        <span>Валюта</span>
+                        <div class="select-box select-box-desktop ">
+                            <div class="select-box__current" tabindex="1">
+                                <div class="select-box__value"><input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked">
+                                    <p class="select-box__input-text select-box__input-text_">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC</span>
+                                    </p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked">
+                                    <p class="select-box__input-text">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC2</span>
+                                    </p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked">
+                                    <p class="select-box__input-text">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC3</span>
+                                    </p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked">
+                                    <p class="select-box__input-text">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC4</span>
+                                    </p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked">
+                                    <p class="select-box__input-text">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC5</span>
+                                    </p>
+                                </div>
+                                <img class="select-box__icon" src="img/arrow-gray-2.svg" alt="Arrow Icon" aria-hidden="true">
+                            </div>
+                            <ul class="select-box__list">
+                                <li>
+                                    <label class="select-box__option" for="0">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="1">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="2">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="3">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="4">
+                                        <i>
+                                            <img src="img/flag__russia.png" alt="">
+                                        </i>
+                                        <span>BTC</span>
+                                    </label>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="agreement-block">
+                    <input type="checkbox" id="check" name="check" class="check" />
+                    <label for="check" class="check-label">Я знаком с </label>
+                    <a href=""> условиями сделки</a>
+                </div>
+                <div class="button-bottom-block">
+                    <div class="green-btn">
+                        Купить 0,05 BTC
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

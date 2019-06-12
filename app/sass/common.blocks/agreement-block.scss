@@ -1,0 +1,59 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.agreement-block {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+
+}
+
+.check[type=checkbox] {
+  display: none;
+}
+
+.check-label {
+  position: relative;
+  height: 17px;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.check[type=checkbox] + .check-label:before {
+  content: "";
+  background: #fff;
+  display: inline-block;
+  border: 1px solid #1BA450;
+  left: 0;
+  top: 2px;
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  border-radius: 3px;
+  transition: all ease .3s;
+}
+
+.check[type=checkbox] + .check-label:after {
+  content: "";
+  background-color: #fff;
+  display: inline-block;
+  left: 1px;
+  top: 3px;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  transition: background-color ease .3s;
+}
+
+
+.check[type=checkbox]:checked + .check-label:after {
+  background-color: #1BA450;
+  left: 3px;
+  top: 5px;
+  height: 11px;
+  width: 11px;
+}
+
+
