@@ -1,18 +1,15 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-    let menuActive       = document.querySelector('.header-burger');
-    let menuClose        = document.querySelector('.right-menu__close');
+function toggleMenuClickHandler(evt) {
+    let menu = document.querySelector('.desktop-menu');
+    menu.classList.toggle("active");
+}
 
-    menuActive.onclick = function() {
-        document.querySelector('.right-menu').classList.toggle('active');
-        document.querySelector('.milk-shadow').classList.toggle('active');
-    };
+let menuToggle = document.querySelector('.header-desktop__burger');
+menuToggle.addEventListener("click", toggleMenuClickHandler);
 
-    menuClose.onclick = function() {
-        document.querySelector('.right-menu').classList.remove('active');
-        document.querySelector('.milk-shadow').classList.remove('active');
-    };
-});
+let menuClose = document.querySelector('.header-desktop__close');
+menuClose.addEventListener("click", toggleMenuClickHandler);
+
 
 document.addEventListener('click', function (event) {
 
@@ -41,18 +38,6 @@ let el = document.querySelector('.accordion-toggle');
 el.onclick = function() {
     el.classList.toggle('active');
 };
-console.log('123');
-
-
-// document.getElementsByName("test1")[0].onfocus = function() {myFunction1(this)};
-// document.getElementsByName("test1")[0].onblur = function() {myFunction2(this)};
-// document.getElementsByName("test2")[0].onfocus = function() {myFunction1(this)};
-// document.getElementsByName("test2")[0].onblur = function() {myFunction2(this)};
-
-// document.getElementsByClassName("test-class").onfocus = function() {myFunction1(this)};
-// document.getElementsByClassName("test-class").onblur = function() {myFunction2(this)};
-
-
 
 function myFunction1(t) {
     t.parentElement.style.borderColor = "#13C64F";
@@ -60,4 +45,21 @@ function myFunction1(t) {
 
 function myFunction2(t) {
     t.parentElement.style.borderColor = "#DEEFE4";
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
 }

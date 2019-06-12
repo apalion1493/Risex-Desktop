@@ -1,0 +1,31 @@
+@import "../library.blocks/bootstrap/bootstrap-reboot";
+@import "variable-color";
+
+.layout-main {
+  display: grid;
+  grid-template-columns: 245px 1fr;
+}
+
+.layout-main__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 62px 1fr;
+}
+
+.layout-main__centering.container  {
+  margin-left: calc(22% - 224px);
+}
+
+@media (max-width: 1440px) {
+  .layout-main__centering.container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .layout-main {
+    grid-template-columns: 0 1fr;
+    position: relative;
+  }
+}
